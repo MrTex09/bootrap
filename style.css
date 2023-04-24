@@ -1,1 +1,87 @@
-\docs\5.3\dist\css\bootstrap.min.css
+.home {
+    background-color: #202529; /* Fondo gris oscuro */
+    border: 2px solid #FFA500; /* Borde naranja de 2px */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative; /* Añadimos posición relativa para el pseudo-elemento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añadimos sombreado alrededor del botón */
+  }
+  
+  .boton:hover::before {
+    content: ""; /* Añadimos el contenido del pseudo-elemento */
+    position: absolute; /* Establecemos la posición como absoluta */
+    top: -2px; /* Ajustamos la posición para que cubra todo el botón */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1; /* Añadimos una posición z para que el brillo quede por debajo del botón */
+    background: linear-gradient(45deg, #FFA500, #FFF); /* Añadimos el efecto de brillo con un degradado */
+    border-radius: 10px;
+    animation: brillo 1s ease-in-out forwards; /* Animamos el efecto de brillo */
+  }
+  
+  @keyframes brillo {
+    0% {
+      opacity: 0; /* Empezamos con opacidad 0 */
+    }
+    50% {
+      opacity: 1; /* Al 50% de la animación, la opacidad será 1 */
+    }
+    100% {
+      opacity: 0; /* Al final de la animación, la opacidad volverá a ser 0 */
+    }
+  }
+  .contacto {
+    background-color: #202529; /* Fondo gris oscuro */
+    border: 2px solid #FFA500; /* Borde naranja de 2px */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative; /* Añadimos posición relativa para el pseudo-elemento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Añadimos sombreado alrededor del botón */
+  }
+  
+  .boton:hover::before {
+    content: ""; /* Añadimos el contenido del pseudo-elemento */
+    position: absolute; /* Establecemos la posición como absoluta */
+    top: -2px; /* Ajustamos la posición para que cubra todo el botón */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1; /* Añadimos una posición z para que el brillo quede por debajo del botón */
+    background: linear-gradient(45deg, #FFA500, #FFF); /* Añadimos el efecto de brillo con un degradado */
+    border-radius: 10px;
+    animation: brillo 1s ease-in-out forwards; /* Animamos el efecto de brillo */
+  }
+  
+  @keyframes brillo {
+    0% {
+      opacity: 0; /* Empezamos con opacidad 0 */
+    }
+    50% {
+      opacity: 1; /* Al 50% de la animación, la opacidad será 1 */
+    }
+    100% {
+      opacity: 0; /* Al final de la animación, la opacidad volverá a ser 0 */
+    }
+  }
+.saber{
+    background-color: #202529;
+    border: solid #FFA500;
+    border-radius: 9px;
+    width: 500px;
+    height: 40px;
+}
